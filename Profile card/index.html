@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Modal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/src/output.css">
+    <style>
+        @keyframes moveRed {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(50px, 50px); }
+}
+
+@keyframes movePurple {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-50px, 50px); }
+}
+/* bg-[#9810fa] */
+    </style>
+</head>
+<body >
+    <div class="flex justify-center items-center z-0 relative h-[100vh] w-[100vw] bg-black font-mono" >  
+    <!-- Circles -->
+        <div class="bg-gradient-to-r from-[#2c2ecd] to-[#871ad5] opacity-65 blur-[1px]   rounded-full size-[140px] absolute top-6 left-76 drop-shadow-[0_0_30px_rgba(126,0,128,0.7)]" style="animation: moveRed 5s infinite ease-in-out;" ></div>
+        <div class=" bg-gradient-to-r from-[#fa4e10] to-[#e10a4a] opacity-65 blur-[1px]  rounded-full size-[180px] absolute top-72 right-60 drop-shadow-[0_0_30px_rgba(255,0,0,0.7)]" style="animation: movePurple 5s infinite ease-in-out;" ></div>
+        
+        <!-- Card -->
+         <div class="flex flex-col z-10 bg-[#21202097] items-center text-white  p-8 px-6 gap-2 border-[#3b3a3a] border-2 rounded-lg "> 
+            <div class="">
+                <img src="profile.jpg" class="rounded-full size-[150px] " >
+            </div>
+            <div class="text-2xl font-bold">
+                <h2>Sonal</h2>
+            </div>
+            <div class="text-xs font-semibold text-[#9e9a9a]">
+                <h3>Web Developer</h3>
+            </div>
+
+            <div >
+                <button onclick="openmodal()" class="border-2 text-xs rounded-[4px] p-1 text-[#9e9a9a] m-1 hover:bg-white hover:text-black"><i class="fa-solid fa-share"></i>
+                    Share My Profile</button>
+                <button class="border-2 text-xs rounded-[4px] p-1 text-[#9e9a9a] hover:bg-white hover:text-black">Follow me</button>
+            </div>
+        
+</div> 
+<!-- Overlay -->
+<div class="overlay hidden fixed top-0 left-0 h-[100vh] w-[100vw] bg-[#312f2fe0] z-30 opacity-0 transition-opacity duration-300"  onclick="closemodal()">
+
+</div>
+
+
+<!-- modal -->
+ <div class=" modal flex flex-col z-40  bg-[#222121ef] text-white p-4 px-4 gap-3 rounded-xl  absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 opacity-0 scale-95 transition-all duration-300 hidden ">
+
+    <div class="flex border-b-2 justify-between border-[#3b3a3a]">
+        <h2 class="font-semibold text-xl pr-14 py-1 font-mono ">Share My Profile</h2>
+        <div class="pl-14 content-center"> <i onclick="closemodal()" class="fa-solid fa-xmark px-2 "></i></div>
+    </div>
+    <div>
+        <h3 class="text-xs font-semibold">Share this via</h3>
+    </div>
+
+    <div class="flex justify-around  rounded-full  gap-5">
+
+        <a href="www.linkedin.com/in/sonal-khod" class="flex items-center justify-center rounded-full border-1 p-1.5 text-blue-600 " id="LinkedIn" ><i class="fa-brands fa-linkedin  "></i></a>
+
+        <a href="khodsonal@gmail.com" class="flex items-center justify-center rounded-full border-1 p-1.5 text-white" id="Gmail"><i class="fa-solid fa-envelope "></i></a>
+
+        <a href="https://github.com/Sonal-khod" class="flex items-center justify-center rounded-full border-1 p-1.5 text-white" id="Github"><i class="fa-brands fa-github "></i></a>
+
+        <a href="#" class="flex items-center justify-center rounded-full border-1 p-1.5 text-blue-500" id="Discord"><i class="fa-brands fa-discord "></i></a>
+
+        <a href="#" class="flex items-center justify-center rounded-full border-1 p-1.5 text-pink-600" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+
+    </div>
+</div>
+</div>
+
+<script src="script.js"></script> 
+
+</body>
+</html>
