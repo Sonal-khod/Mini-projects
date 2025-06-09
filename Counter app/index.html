@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="h-[100vh] w-[100vw] flex flex-col justify-center items-center gap-10 bg-gray-700">
+        <div class="text-[#0398d4] font-medium text-[24px] font-mono">Increment and Decrement  </div>
+        <div class="flex justify-around  bg-white text-[25px] text-[#344151] rounded-sm gap-12 p-3 px-5">
+            <button onclick="Decrement()" class="border-r-2 border-[#bfbfbf] pr-5">  
+                <i class="fa-solid fa-minus"></i>
+            </button>
+            <div id="counter" class="font-bold">  0  </div>
+            <button onclick="Increment()" class="border-l-2 border-[#bfbfbf] pl-5">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
