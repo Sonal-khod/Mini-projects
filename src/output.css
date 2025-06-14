@@ -325,6 +325,12 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
   .rounded-\[4px\] {
     border-radius: 4px;
   }
@@ -333,6 +339,9 @@
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
+  }
+  .rounded-sm {
+    border-radius: var(--radius-sm);
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
@@ -345,12 +354,23 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-r-2 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 2px;
+  }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
   }
+  .border-l-2 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 2px;
+  }
   .border-\[\#3b3a3a\] {
     border-color: #3b3a3a;
+  }
+  .border-\[\#bfbfbf\] {
+    border-color: #bfbfbf;
   }
   .bg-\[\#312f2fe0\] {
     background-color: #312f2fe0;
@@ -366,6 +386,12 @@
   }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .bg-gray-700 {
+    background-color: var(--color-gray-700);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .bg-gradient-to-r {
     --tw-gradient-position: to right in oklab;
@@ -393,6 +419,9 @@
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -405,14 +434,23 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .pr-5 {
+    padding-right: calc(var(--spacing) * 5);
+  }
   .pr-14 {
     padding-right: calc(var(--spacing) * 14);
+  }
+  .pl-5 {
+    padding-left: calc(var(--spacing) * 5);
   }
   .pl-14 {
     padding-left: calc(var(--spacing) * 14);
@@ -432,9 +470,19 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .text-\[24px\] {
+    font-size: 24px;
+  }
+  .text-\[25px\] {
+    font-size: 25px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -442,6 +490,12 @@
   }
   .text-\[\#9e9a9a\] {
     color: #9e9a9a;
+  }
+  .text-\[\#0398d4\] {
+    color: #0398d4;
+  }
+  .text-\[\#344151\] {
+    color: #344151;
   }
   .text-blue-500 {
     color: var(--color-blue-500);
