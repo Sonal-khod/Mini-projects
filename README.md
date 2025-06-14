@@ -19,7 +19,7 @@ This is a stylish **profile card UI project** built using **HTML**, **Tailwind C
 
 ![Profile Card Screenshot] 
 
----![Screenshot 2025-06-09 144015](https://github.com/user-attachments/assets/2d6506ef-ea4d-4294-97e7-7cac4a99b3e3)
+---![Screenshot  144015](https://github.com/user-attachments/assets/2d6506ef-ea4d-4294-97e7-7cac4a99b3e3)
 
 
 ## 🚀 Tech Stack
@@ -37,6 +37,6 @@ profile-card-modal/
 ── script.js # Modal logic
 ── /src/output.css # Tailwind compiled CSS
 ── profile.jpg # Your profile picture
-── Screenshot 2025-06-09... # Screenshot of UI
+── Screenshot-... # Screenshot of UI
 ── README.md # This file
 
