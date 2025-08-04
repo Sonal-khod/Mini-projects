@@ -10,3 +10,6 @@ const Decrement=()=>{
     count.innerText=value;
 
 };
+const Reset=()=>{
+    count.innerText=0;
+};
